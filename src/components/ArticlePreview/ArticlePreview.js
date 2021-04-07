@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as Image from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
-const PreviewWrapper = styled.div`
+const PreviewWrapper = styled(Link)`
+  display: block;
   position: relative;
   width: 100%;
   height: 340px;
@@ -42,8 +44,8 @@ const PreviewInfoLabel = styled.div`
 //   </PreviewWrapper>
 // );
 
-const Preview = ({ title, excerpt, background }) => (
-  <PreviewWrapper background={background}>
+const Preview = ({ title, excerpt, background, slug }) => (
+  <PreviewWrapper background={background} to={`/articles/${slug}`}>
     <PreviewInfoLabel>
       <h2>{title}</h2>
       <p>{excerpt}</p>

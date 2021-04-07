@@ -40,8 +40,9 @@ const ArticlesPage = ({ data }) => {
               title={title}
               excerpt={excerpt}
               background={featuredImage.childImageSharp.fluid.src}
-              key={title}
+              key={slug}
               // image={featuredImage.childImageSharp.fluid}
+              slug={slug}
             />
           )
         )}
