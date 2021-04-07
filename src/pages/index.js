@@ -65,15 +65,27 @@ export const query = graphql`
   {
     file(name: { eq: "hero" }) {
       childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 1200, quality: 90, grayscale: true) {
-          src
-          srcSet
-          sizes
+        fluid(maxWidth: 1000, maxHeight: 1800, quality: 100) {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
   }
 `;
+
+// export const query = graphql`
+//   {
+//     file(name: { eq: "hero" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 800, maxHeight: 1200, quality: 90, grayscale: true) {
+//           src
+//           srcSet
+//           sizes
+//         }
+//       }
+//     }
+//   }
+// `;
 
 // const IndexPage = ({ data }) => (
 //   <>
