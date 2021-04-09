@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Button from '../components/Navigation/Button/Button';
 
 const ContentWrapper = styled.div`

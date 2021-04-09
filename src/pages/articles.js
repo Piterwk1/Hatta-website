@@ -61,9 +61,16 @@ export const query = graphql`
           title
           featuredImage {
             childImageSharp {
+              #   gatsbyImageData(
+              #   width: 500
+              #   placeholder: TRACED_SVG
+              #   layout: CONSTRAINED
+              # )
               fluid(maxWidth: 700, maxHeight: 500) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                # src
+                #   # ...GatsbyImageSharpFluid_tracedSVG
+                src
+                #   src
+                #   tracedSVG
               }
             }
           }

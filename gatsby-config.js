@@ -99,6 +99,7 @@ module.exports = {
         apiToken: process.env.API_DATO_CMS,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-mdx`,
