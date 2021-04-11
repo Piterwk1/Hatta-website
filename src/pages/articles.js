@@ -67,53 +67,6 @@ export const query = graphql`
   }
 `;
 
-// const ArticlesPage = ({ data }) => {
-//   const {
-//     allDatoCmsArticle: { nodes },
-//   } = data;
-//   return (
-//     <>
-//       <PageInfo title={pageData.title} paragraph={pageData.paragraph} />
-//       <ArticlesWrapper>
-//         {nodes.map(({ title, featuredImage }) => (
-//           <ArticlePreview
-//             key={title}
-//             title={title}
-//             image={featuredImage.fluid}
-//             slug={slugify(title, { lower: true })}
-//           />
-//         ))}
-//       </ArticlesWrapper>
-//     </>
-//   );
-// };
-
-// //   <GatsbyImage
-// //     image={featuredImage.gatsbyImageData}
-// //     alt="error loading picture"
-// //   />
-// // </ArticlePreview>
-
-// export const query = graphql`
-//   {
-//     allDatoCmsArticle {
-//       nodes {
-//         title
-//         featuredImage {
-//           # gatsbyImageData(
-//           #   width: 500
-//           #   placeholder: TRACED_SVG
-//           #   layout: CONSTRAINED
-//           # )
-//           fluid(maxWidth: 500) {
-//             ...GatsbyDatoCmsFluid_tracedSVG
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
 // using local data
 // const ArticlesPage = ({ data }) => {
 //   const {
