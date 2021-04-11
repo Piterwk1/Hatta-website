@@ -48,7 +48,8 @@ const Preview = ({ title, excerpt, background, slug }) => (
   <PreviewWrapper background={background} to={`/articles/${slug}`}>
     <PreviewInfoLabel>
       <h2>{title}</h2>
-      <p>{excerpt}</p>
+      {/* only with local data */}
+      {/* <p>{excerpt}</p> */}
     </PreviewInfoLabel>
   </PreviewWrapper>
 );
